@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Intro</title>
+</head>
+<body>
+    <h1>Form Intro</h1>
+    <p><b>Form</b> => Form Tag is USed to make a Form in HTML</p>
+    <p><b>action </b> => Path Backend</p>
+    <p><b>method</b>Two types of Method</p>
+    <ul>
+        <li>get => less secure, shows data in URl, easily Bookmarked, Limitation</li>
+        <li>post => secure, Never shows data in URl, Not Bookmarked, No Limitation, used for file upload</li>
+    </ul>
+    <hr>
+    <p><b>enctype</b></p>
+    <ul>
+        <li>application/x-www-form-urlencoded => By Default</li>
+        <li>multipart/form-data => When input type is file</li>
+        <li>text/plain => used for Debugging process</li>
+    </ul>
+
+    <!-- ? => String -->
+    <!-- & => multiple data  -->
+     <hr>
+
+    <fieldset>
+        <legend>My Form</legend>
+        <form action="" method="post" enctype="">
+            <label for="uname">User Name</label>
+            <input type="text" name="uname" id="uname">
+            <br>
+            <br>
+            <label for="upass">User Pass</label>
+            <input type="password" name="upass" id="upass">
+            <br>
+            <br>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>
