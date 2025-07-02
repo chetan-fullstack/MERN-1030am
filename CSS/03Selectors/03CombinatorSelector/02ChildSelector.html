@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+
+        .parent{
+            border: 5px solid black;
+        }
+        .child{
+            border: 5px solid green;
+        }
+
+        .parent > p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector (>)</h1>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem.</p>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem.</p>
+    </div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet. Nemo aliquam dolores similique voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet. Nemo aliquam dolores similique voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet. Nemo aliquam dolores similique voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet. Nemo aliquam dolores similique voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet. Nemo aliquam dolores similique voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet. Nemo aliquam dolores similique voluptatum.</p>
+</body>
+</html>

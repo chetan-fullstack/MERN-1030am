@@ -1,0 +1,12 @@
+.external{
+    background-color: black;
+    color: gold;
+}
+
+li{
+    list-style-type: none;
+    font-size: 30px;
+}
+p{
+    color: blue;
+}
