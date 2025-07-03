@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        /* Important  */
+
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+
+
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        border: 10px solid lime;
+        padding: 20px;
+        background-color: crimson;
+        color: aliceblue;
+        margin: 0 auto;
+      }
+      .content-box {
+        box-sizing: content-box;
+
+        /* Width => 100px + border => 10*2 = 20px  + padding => 20px * 2 = 40px ==> Total Width = 160px*/
+        /* Height => 100px + border => 10*2 = 20px  + padding => 20px * 2 = 40px ==> Total Height = 160px*/
+      }
+      .border-box {
+        box-sizing: border-box;
+        /* Width => 100px - border => 10*2 = 20px  - padding => 20px * 2 = 40px ==> Total Width = 40px*/
+        /* Height => 100px - border => 10*2 = 20px  - padding => 20px * 2 = 40px ==> Total Height = 40px*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box-Sizing</h1>
+    <hr>
+
+    <div class="content-box">Border-Box</div>
+    <hr />
+    <div class="border-box">Border-Box</div>
+  </body>
+</html>
