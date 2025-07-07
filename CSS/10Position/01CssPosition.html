@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+
+
+    <!-- Internal CSS  -->
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div[class*="box"]{
+            height: 500px;
+            border: 5px solid black;
+            margin: 20px;
+            font-size: 30px;
+        }
+        .box-1{
+            background-color: orange;
+        }
+        .box-2{
+            background-color: green;
+        }
+        .box-3{
+            background-color: brown;
+        }
+        .box-4{
+            background-color: blue;
+        }
+        .box-5{
+            background-color: grey;
+            position: relative;
+        }
+        .fixed{
+            background-color: black;
+            color: aliceblue;
+            position: fixed;
+
+            /* offsets  */
+
+            top: 0px;
+            right: 0px;
+        }
+        .sticky{
+            background-color: khaki;
+            color: teal;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        div[class*="box-ab"]{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+        }
+
+        .box-ab-1{
+            background-color: crimson;
+            top: 30px;
+            left: 30px;
+        }
+        .box-ab-2{
+            background-color: green;
+            top: 60px;
+            left: 60px;
+        }
+        .box-ab-3{
+            background-color: blue;
+            top: 90px;
+            left: 90px;
+        }
+        .box-ab-4{
+            background-color: yellow;
+            top: 120px;
+            left: 120px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Position</h1>
+    <hr>
+    <ul>
+        <li>Static</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+        <li>Abosulte</li>
+        <li>Relative</li>
+    </ul>
+    <hr>
+    <div class="box-1">Box-1
+        <div class="fixed">Fixed</div>
+    </div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3
+        <div class="sticky">Sticky</div>
+    </div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">Box-5
+        <div class="box-ab-1">Box-ab-1</div>
+        <div class="box-ab-2">Box-ab-2</div>
+        <div class="box-ab-3">Box-ab-3</div>
+        <div class="box-ab-4">Box-ab-4</div>
+    </div>
+    <hr>
+    <h2>Task of The Day</h2>
+    <img src="../../Images/PositionCSS_Task.png" width="100%" alt="">
+</body>
+</html>
