@@ -62,3 +62,18 @@ h3+p{
     font-size: 15px;
     padding: 12px 0px;
 }
+
+
+
+
+/* Media Query  */
+
+
+ @media (max-width: 576px) {
+       .row{
+        flex-direction: column;
+       }
+       .col-25, .col-33, .col-50, .main-text{
+        width: 100%;
+       }
+      }

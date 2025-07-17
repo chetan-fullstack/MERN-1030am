@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <!-- Font Awesome CDN  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Internal CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: black;
+        color: aliceblue;
+        padding: 10px;
+        font-size: 30px;
+        position: relative;
+        z-index: 1;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style-type: none;
+        padding: 10px 30px;
+      }
+      input {
+        height: 30px;
+        width: 30px;
+      }
+      input {
+        position: absolute;
+        top: 18px;
+        right: 10px;
+        opacity: 0;
+      }
+      input{
+        display: none;
+      }
+      .humburger{
+        display: none;
+      }
+
+      
+
+      /* Media Query  */
+
+      @media (max-width: 576px) {
+
+        .nav{
+          z-index: 2;
+          
+        }
+        .navbar{
+          display: none;
+
+        }
+       input{
+        display: block;
+      }
+      .humburger{
+        display: block;
+      } 
+        
+      input:checked + .navbar {
+        display: block;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background-color: green;
+        text-align: center;
+        animation-name: move;
+        animation-duration: 2s;
+      }
+    
+
+      @keyframes move {
+        from{
+          margin-left: -200px;
+        }
+        to{
+          margin-left: 0;
+
+        }
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav row">
+      <div class="logo">
+        <h2>Logo</h2>
+      </div>
+      <input type="checkbox" />
+
+      <ul class="navbar row">
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+      </ul>
+      <i class="fa-solid fa-bars humburger "></i>
+    </nav>
+  </body>
+</html>
