@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            background-color: blue;
+            animation-name: light;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes light {
+            
+            0%{
+                background-color: crimson;
+            }
+            20%{
+                background-color: green;
+            }
+            40%{
+                background-color: pink;
+            }
+            60%{
+                background-color: yellow;
+            }
+            80%{
+                background-color: orange;
+            }
+            100%{
+                background-color: lime;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

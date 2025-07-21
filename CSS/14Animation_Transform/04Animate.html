@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate CSS</title>
+
+    <!-- CDN Animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Custom CSS  -->
+
+    <style>
+      h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="animate__animated animate__heartBeat">Animate</h2>
+    <hr />
+    <h2 class="animate__animated " id="heading">Animate</h2>
+    <hr>
+    <button onclick="AddClassBtn()">Add Class</button>
+  </body>
+</html>
+
+<script>
+  let heading = document.getElementById("heading");
+
+  function AddClassBtn() {
+    heading.classList.add("animate__backInDown")
+  }
+</script>
+
+<!-- https://animate.style/ -->
