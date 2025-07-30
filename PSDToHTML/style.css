@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    background: url(../Images/banner.jfif)no-repeat center center/cover;
+    /* height: 100vh; */
+}
