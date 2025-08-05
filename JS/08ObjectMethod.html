@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <h1>Object Method</h1>
+
+    <script>
+      // Object Method
+
+      let myObj = {
+        name: "Rohan",
+        age: 22,
+        email: "rohan@google.com",
+      };
+
+      console.log(myObj);
+      console.log(myObj.name);
+      console.log(myObj.age);
+      console.log(myObj.email);
+
+    //   const myobj2 = {};
+    //   const myobj3 = new Object();
+
+    //   console.log(myobj2);
+    //   console.log(myobj3);
+
+      const myobj2 = { a: 1, b: 2 };
+      const myobj3 = { c: 4, d: 5 };
+      console.log(myobj2);
+      console.log(myobj3);
+      
+    
+      const myobj4 = Object.assign({}, myobj2, myobj3);
+      
+      
+      console.log(myobj4);
+      console.log(myobj2);
+      console.log(myobj3);
+
+
+      console.log(Object.entries(myObj));
+      console.log(Object.keys(myObj));
+      console.log(Object.values(myObj));
+      
+      
+    </script>
+  </body>
+</html>
